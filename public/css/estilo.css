@@ -1,0 +1,480 @@
+/* Older browsers */
+
+header, section, footer, aside, nav, main, article, figure {
+    display: block;
+  } 
+  
+  /* welcome page */
+  @media only screen and (max-width: 600px) {
+      .textBox{
+          padding-left:20px;
+          padding-right:20px;
+      }
+  }
+  /* head style welcome page*/
+  
+  html, body {
+      color: #636b6f;
+      font-family: 'Nunito', sans-serif;
+      height: 100vh;
+      margin: 0;
+  }
+  
+  .centro{
+      margin: 0 auto;
+      width: calc( 100% - 30px);
+  }
+  
+  .full-height {
+      height: 100vh;
+  }
+  
+  .flex-center {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+  }
+  
+  .position-ref {
+      position: relative;
+  }
+  
+  .top-right {
+      position: relative;
+      right: 10px;
+      top: 50px;
+      font-size: 1.2em;
+  }
+  
+  .content {
+      text-align: center;
+  }
+  
+  .title {
+      font-size: 84px;
+  }
+  
+  .links > a {
+      color: white;
+      padding: 0 25px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: .1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      
+  }
+  
+  .formulario{ 
+      background-color: #F68933 ;
+      padding: 10px;
+      border-radius: 5px;
+      color: white;
+      position: relative;
+      margin-top: 5px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  
+  
+  .about{
+      margin-top: 50px;
+      padding: 20px;
+      border-radius: 10px;
+  }
+  
+  /* Nav */
+  
+  .cor0{
+      background-color: #F68933 ;
+  }
+  
+  .cor1{
+      background-color: #005d82;
+  }
+  
+  .cor2{
+      background-color: #d0a1a1;
+  }
+  
+  .cor4{
+      color:#6c757d;
+  }
+  
+  .cor5{
+      background-color:rgb(0,93,130);
+  }
+  
+  /* footer */
+  
+  .footer {
+      position: relative;
+      margin-top: -48px;/* negative value of footer height */
+      height: 250px;
+      clear:both;
+      color: white;
+      /*margin-top: 300px;*/
+  } 
+  
+  .footerAdmin {
+      position: relative;
+      margin-top: -150px;/* negative value of footer height */
+      height: 350px;
+      clear:both;
+      padding-top:20px;
+      background-color: #2f2929;
+      color: white;
+      text-align: center;
+      margin-top: 100px;
+  } 
+  /* quote form */
+  
+  .input-row{
+      margin-top: -50px;
+  }
+  
+  /* Cars create */
+  
+  .carAvatar{
+      width: auto;
+      margin: calc(100% - 10px);   
+  }
+  
+  .centro{
+      margin-left: auto;
+      margin-right: auto;
+  }
+  
+  .top{
+      margin-top:50px;
+  }
+  
+  .topper{
+      margin-top:100px;
+  }
+  
+  /* caixa carro index */
+  
+  .boxes{
+      width: 100%;
+      height: auto;
+  }
+  
+  .boxBookingShow{
+      min-width: 240px;
+      width: 100%;
+  }
+  
+  .white{
+      color: white;
+  }
+  
+  .topBox{
+      margin: 10px;
+  }
+  
+  .outBox{
+      margin: 20px;
+  }
+  
+  .iconsBox{
+      background-color: grey;
+      padding: 5px;  
+      color:#181818; 
+  }
+  
+  .iconsBox2{
+      background-color: grey;
+      padding: 5.5px;   
+      color:#181818; 
+  }
+  
+  @media only screen and (max-width: 320px) {
+      .iconsBox{
+          margin-left: -5px;
+      }
+      .iconsLeg{
+          margin-left: 3px;
+      }
+      td {
+          max-width: 55px;
+          font-size: 0.6rem;
+      }
+      .table{
+          margin-left:-8px;
+      }
+      .basicButton{
+          font-size: small;
+          margin-top: 10px;
+      }
+      .allIncButton{
+          font-size: small;
+          margin-top: 10px;
+      }
+  }
+  
+  .legendasIcons2{
+      font-size: 0.7rem;
+  }
+  
+  @media only screen and (max-width: 300px) {
+      .legendasIcons{
+          font-size: 0.6rem;
+      }
+      .legendasIcons2{
+          font-size: 0.6rem;
+      }
+  
+      .leftButton{
+          margin-left:-30px;
+      }
+  
+      .rightButton{
+          margin-right:-30px;
+      }
+  }
+  
+  /* Box das epocas */
+  
+  .epocasBox{
+      display: inline-block;
+      width: 160px;
+  }
+  
+  .basicButton{
+      border-color: #F5F5F5;
+      color:#005d82;
+      background-color: #F5F5F5;
+      width:100%;
+      font-size: large;
+      border-style: hidden;
+  }
+  
+  .allIncButton{
+      border-color: #E0E0E0;
+      color: #F68933;
+      font-size: large;
+      background-color: #E0E0E0;
+      width: 100%;
+      border-style: hidden;
+  }
+  
+  .buttonFleet{
+      color: #636b6f;
+      background-color: white;
+      border-color: white;
+      font-size: large;
+      width: 100%;
+      border-style: hidden;
+  }
+     
+  /* booking form formulario */
+  
+  .numberBox{
+      width:28px;
+      height: 25px;
+      color: #636b6f;
+  }
+  
+  .numberLegend{
+      margin-left:20px;
+      color: #636b6f;
+  }
+  
+  .color{
+      color: #636b6f;
+  }
+  
+  /* age formulario field*/
+  .age{
+      min-width:60px;
+  }
+  
+  /* modal */
+  
+  @media only screen and (max-width: 365px) {
+      #carouselExampleSlidesOnly{
+          margin-top:120px;
+      }
+  }
+  
+  @media only screen and (max-width: 767px) {
+      .dropPoint{
+          margin-top: 50px;
+      }
+      .yourSelection{
+          display: none;
+      }
+      .space{
+          margin-top:50px;
+      }
+      .boxes{
+          margin-top:-20px;
+      }
+      .invoiceBox{
+          margin-top:50px;
+      }
+  }
+  @media only screen and (min-width: 767px) {
+   .collpseSelection{
+          display: none;
+      }
+  }
+  
+  @media only screen and (max-width: 241px){
+      .navbar-nav{
+          margin-top: -25px;
+      }
+  }
+  
+  .backgroundImage{
+      background-image: url('/images/websiteMains/algarve-tours.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      height: auto;
+  }
+  
+  .bookNowWelcome{
+      background-image: url('/images/websiteMains/tavira-algarve-portugal.jpg');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 100%;
+      height: 500px;
+  }
+  
+  .verticalAlign{
+      position: relative;
+      top:100px;
+  }
+  
+  .tamanhoFont{
+      font-size: 3rem;
+  }
+  
+  .carousel{
+      margin-top: 120px;
+  }
+  
+  .footerBox{
+      height:40px;
+      background-color: rgb(0,93,130);
+      border-bottom-color:white;
+      border-width:3px;
+      border-bottom-style: solid;
+  }
+  
+  .footerBottomBox{
+      border-bottom-color:white;
+      border-width:3px;
+      border-top-style: solid;
+  }
+  
+  .contactBox{
+      width: 50px;
+  }
+  
+  .contactEmail{
+      margin-bottom: 257px;
+  }
+  
+  .cemCento{
+      width:100%;
+  }
+  
+.StripeElement {
+  box-sizing: border-box;
+  height: 40px;
+  padding: 10px 12px;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: white;
+  
+  box-shadow: 0 1px 3px 0 #e6ebf1;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+  }
+  
+  .StripeElement--focus {
+  box-shadow: 0 1px 3px 0 #cfd7df;
+  }
+  
+  .StripeElement--invalid {
+  border-color: #fa755a;
+  }
+  
+  .StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+  }  
+  
+  .input-icons i { 
+    position: absolute; 
+  }  
+  
+  .input-icons { 
+    width: 100%; 
+    margin-bottom: 10px;  
+    opacity:0.5;
+    margin-bottom:20px; 
+  } 
+  
+  .icon { 
+    padding: 10px; 
+    min-width: 50px; 
+    left: 30px; 
+  } 
+
+  .posts {
+    overflow: hidden;
+    max-height: 300px;
+  }
+
+  /*Cookie Consent form */
+  #cookieConsent {
+    background-color: rgba(20,20,20,0.8);
+    min-height: 46px;
+    font-size: 14px;
+    color: #ccc;
+    line-height: 26px;
+    padding: 8px 0 8px 30px;
+    font-family: "Trebuchet MS",Helvetica,sans-serif;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+}
+#cookieConsent a {
+    color: #4B8EE7;
+    text-decoration: none;
+}
+#closeCookieConsent {
+    float: right;
+    display: inline-block;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    margin: -15px 0 0 0;
+    font-weight: bold;
+}
+#closeCookieConsent:hover {
+    color: #FFF;
+}
+#cookieConsent a.cookieConsentOK {
+    background-color: #F1D600;
+    color: #000;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 0 20px;
+    cursor: pointer;
+    float: right;
+    margin: 0 60px 0 10px;
+}
+#cookieConsent a.cookieConsentOK:hover {
+    background-color: #E0C91F;
+}
