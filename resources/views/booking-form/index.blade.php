@@ -373,9 +373,9 @@
             <div class="card border shadow-lg">
                 <div class="image"></div>  
                 <div class="card-body">
-                    <h5 class="card-title groupType text-center" ></h5>
-                    <p class="card-text marca text-center"></p>
-                    <p class="card-text text-center ml-5 mr-5 border shadow-lg" style="border-radius:3px;"><span>From € <span class="perWeek"></span> <small>week</small></span></p>
+                    <h5 class="card-title groupType" ></h5>
+                    <p class="card-text marca"></p>
+                    <p class="card-text text-center bg-primary border shadow-lg" style="border-radius:3px;"><span class="text-white">From € <span class="perWeek"></span> <small>week</small></span></p>
                     <div class="d-flex bd-highlight icons"> </div>
                     <div class="d-flex flex-row bd-highlight">
                         <div class="p-1 flex-fill bd-highlight text-center"><span style="padding:6px;width:100%;" class="legendasIcons2 lugares"></span></div>
@@ -412,12 +412,12 @@ constructor(){
             $('.groupType').html(result['groupType']); 
             $('.marca').html(result['marca']);
             $('.perWeek').html(result['epocaBaixa'] * 7);
-            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-users iconsBox border" title="'+result['lugares']+'xSeats"></i></div>');
-            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase iconsBox border" title="'+result['bagagemGr']+'xSuitcases"></i></div>'); 
-            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase-rolling iconsBox2 border" title="'+result['bagagemPq']+'xSmall Suitcases"></i></div>');          
-            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-gas-pump iconsBox border" title="'+result['combustivel']+'"></i></div>');
-            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-cogs iconsBox border" title="'+result['transmissao']+'"></i></div>');
-            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-snowflake iconsBox border" title="'+result['arCondicionado']+'"></i></div>');  
+            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-users border" title="'+result['lugares']+'xSeats"></i></div>');
+            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase border" title="'+result['bagagemGr']+'xSuitcases"></i></div>'); 
+            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase-rolling border" title="'+result['bagagemPq']+'xSmall Suitcases"></i></div>');          
+            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-gas-pump border" title="'+result['combustivel']+'"></i></div>');
+            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-cogs border" title="'+result['transmissao']+'"></i></div>');
+            $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-snowflake border" title="'+result['arCondicionado']+'"></i></div>');  
 
             $('.lugares').html('x'+result['lugares']);
             $('.bagagemGr').html('x'+result['bagagemGr']);
@@ -457,12 +457,12 @@ cars (){
              $('.groupType').html(result['groupType']); 
              $('.marca').html(result['marca']);
              $('.perWeek').html(result['epocaBaixa'] * 7);
-             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-users iconsBox border" title="'+result['lugares']+'xSeats"></i></div>');
-             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase iconsBox border" title="'+result['bagagemGr']+'xSuitcases"></i></div>'); 
-             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase-rolling iconsBox2 border" title="'+result['bagagemPq']+'xSmall Suitcases"></i></div>');          
-             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-gas-pump iconsBox border" title="'+result['combustivel']+'"></i></div>');
-             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-cogs iconsBox border" title="'+result['transmissao']+'"></i></div>');
-             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-snowflake iconsBox border" title="'+result['arCondicionado']+'"></i></div>');  
+             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-users border" title="'+result['lugares']+'xSeats"></i></div>');
+             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase border" title="'+result['bagagemGr']+'xSuitcases"></i></div>'); 
+             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-suitcase-rolling border" title="'+result['bagagemPq']+'xSmall Suitcases"></i></div>');          
+             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-gas-pump border" title="'+result['combustivel']+'"></i></div>');
+             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-cogs border" title="'+result['transmissao']+'"></i></div>');
+             $('.icons').append('<div class="p-1 flex-fill bd-highlight text-center"><i class="fas fa-snowflake border" title="'+result['arCondicionado']+'"></i></div>');  
              $('.lugares').html('x'+result['lugares']);
              $('.bagagemGr').html('x'+result['bagagemGr']);
              $('.bagagemPq').html('x'+result['bagagemPq']);
