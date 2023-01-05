@@ -39,30 +39,34 @@ class CarroController extends Controller
     public function store(CarroRequest $request)
     {
         if (Auth::check() ) {     
-           
-            $filename = $request->file('imagem');
-            $image_resize = Image::make($filename)->resize(274,165)->save($filename);
-            $path = $request->file('imagem')->store('public/carros');        
-            $carro = Carro::create([
-                'groupType' => $request->input('groupType'),
-                'marca' => $request->input('marca'),
-                'epocaBaixa' => $request->input('epocaBaixa'),
-                'epocaMedia' => $request->input('epocaMedia'),
-                'epocaMediaAlta' => $request->input('epocaMediaAlta'),
-                'epocaAlta' => $request->input('epocaAlta'),
-                'seguro' => $request->input('seguro'),
-                'transmissao' => $request->input('transmissao'),
-                'lugares' => $request->input('lugares'),
-                'bagagemGr' => $request->input('bagagemGr'),
-                'bagagemPq' => $request->input('bagagemPq'),
-                'combustivel' => $request->input('combustivel'),
-                'arCondicionado' => $request->input('arCondicionado'),
-                'imagem' => $path,
-                'numeroReservas' => 0,
-                'active' => $request->input('active'),
-                'user_id' => Auth::user()->id,
-            ]);
-
+            if ($request->hasFile('imagem')) {
+                $image = Image::make($request->file('imagem'));
+                $image->resize(240,180);
+                if (!Storage::exists('public/cars/')) {
+                    Storage::makeDirectory('public/cars/', 0775, true);
+                }
+                $time = time();
+                $image->save(storage_path('app/public/cars/' . $time . $request->file('imagem')->getClientOriginalName()), 60, 'png');
+                $carro = Carro::create([
+                    'groupType' => $request->input('groupType'),
+                    'marca' => $request->input('marca'),
+                    'epocaBaixa' => $request->input('epocaBaixa'),
+                    'epocaMedia' => $request->input('epocaMedia'),
+                    'epocaMediaAlta' => $request->input('epocaMediaAlta'),
+                    'epocaAlta' => $request->input('epocaAlta'),
+                    'seguro' => $request->input('seguro'),
+                    'transmissao' => $request->input('transmissao'),
+                    'lugares' => $request->input('lugares'),
+                    'bagagemGr' => $request->input('bagagemGr'),
+                    'bagagemPq' => $request->input('bagagemPq'),
+                    'combustivel' => $request->input('combustivel'),
+                    'arCondicionado' => $request->input('arCondicionado'),
+                    'imagem' => 'cars/' . $time . $request->file('imagem')->getClientOriginalName(),
+                    'numeroReservas' => 0,
+                    'active' => $request->input('active'),
+                    'user_id' => Auth::user()->id,
+                ]);
+            }
             if ($carro) {
                 if (View::exists('carros.show')) {
                     return redirect()->route('carros.show', ['carro' => $carro->id])

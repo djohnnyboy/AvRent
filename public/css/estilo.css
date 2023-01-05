@@ -180,14 +180,14 @@ header, section, footer, aside, nav, main, article, figure {
   
   .iconsBox{
       background-color: grey;
-      padding: 5px;  
+      padding: 5px; 
       color:#181818; 
   }
   
   .iconsBox2{
       background-color: grey;
-      padding: 5.5px;   
-      color:#181818; 
+      padding: 5.5px;  
+      color:#181818;
   }
   
   @media only screen and (max-width: 320px) {
