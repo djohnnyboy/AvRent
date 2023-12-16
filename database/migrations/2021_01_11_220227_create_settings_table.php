@@ -15,13 +15,13 @@ class CreateSettingsTable extends Migration
     {
         Schema::create('settings', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('email')->default('joaovieira@gmail.com');
-            $table->integer('spainInsurance')->default(25);
-            $table->integer('gps')->default(30);
-            $table->integer('extraDriver')->default(20);
-            $table->integer('todlerSeat')->default(20);
-            $table->integer('infantSeat')->default(25);
-            $table->integer('boosterSeat')->default(25);
+            $table->string('email');
+            $table->integer('spainInsurance');
+            $table->integer('gps');
+            $table->integer('extraDriver');
+            $table->integer('todlerSeat');
+            $table->integer('infantSeat');
+            $table->integer('boosterSeat');
             $table->timestamps();
         });
     }
