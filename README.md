@@ -4,7 +4,7 @@
 
 # create a database 
 
-# create a .env file 
+# create a .env file if you use mamp with mac add this to your .env file DB_SOCKET=/Applications/MAMP/tmp/mysql/mysql.sock
 
 # php artisan key:generate
 
